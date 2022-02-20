@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Medilab & Drug Store Information System</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.jpg" rel="logo">
+  <link href="assets/img/icon.jpg" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:contactus@mldis.com">contactus@mldis.com</a>
+        <i class="bi bi-phone"></i> +91 94510 65403
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">MediLab & DrugStore</a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Login</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/Login/new_account.html" target="_blank">Login as Patient</a></li>
+              <li><a href="/Login/new_account.html" target="_blank">Login as Doctor</a></li>
+              <li><a href="/Login/new_account.html" target="_blank">Login as Admin</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#services">Tests</a></li>
+          <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
+          <li><a class="nav-link scrollto" href="/medistore/home.html" target="_blank">Search Medicines</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">Our Physicians</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span>
+        Appointment</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+
+      <h1>Welcome to our Medilab</h1>
+      <h2>Book instant appointments | Buy medicines | Track your reports</h2>
+      <a href="#appointment" class="btn-get-started scrollto">Get Started</a>
+
+      <a class="trigger_popup_fricc btn-get-started scrollto">Upload Prescription</a>
+
+      <div class="hover_bkgr_fricc">
+        <span class="helper"></span>
+        <div>
+          <div class="popupCloseButton">&times;</div>
+          <p>Click on the "Choose File" button to upload a file:</p>
+
+          <form action="/medistore/home.html" target="_blank">
+            <input type="file" id="myFile" name="filename">
+            <input type="submit">
+          </form>
+        </div>
+      </div>
+  </section><!-- End Hero -->
+
+
+  <!-- ======= Why Us Section ======= -->
+  <section id="why-us" class="why-us">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="content">
+            <h3>Why Choose Medilab?</h3>
+            <p>
+              Our MediLab & Drug Store System is designed to cater to the needs of a typical test laboratory
+              where all the prescribed tests are conducted by our professional clinicians and prescribed drugs &
+              medicines are available 24x7.
+            </p>
+            <div class="text-center">
+              <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 d-flex align-items-stretch">
+          <div class="icon-boxes d-flex flex-column justify-content-center">
+            <div class="row">
+              <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-time"></i>
+                  <h4>Book appointments</h4>
+                  <p>Make appointments at your ease. Choose the required test, select a slot and get your first
+                    appointment.</p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-plus-medical"></i>
+                  <h4>Buy medicines</h4>
+                  <p>Shop medicines and prescribed drugs at our facility. Online 24x7 service available too.</p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Track your reports</h4>
+                  <p>Find updates on your latest tests. Track all your reports and download the reports anytime.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Why Us Section -->
+
+
+  <!-- ======= Tests Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Tests</h2>
+        <p>These are some common tests that determine the cause and nature of diseases by examining and testing body
+          tissues (from biopsies and pap smears, for example) and bodily fluids (from samples including blood and
+          urine). The results from these pathology tests help doctors diagnose and treat patients correctly. Here’s a
+          list of the health tests that everyone should undertake as part of a healthy lifestyle.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><i class="fas fa-heartbeat"></i></div>
+            <h4><a href="">Complete Blood Count (CBC)</a></h4>
+            <strong style="font-size: 15px; color: brown;">Price: ₹450</strong>
+            <p>It is used to diagnose anaemia, infections, certain types of cancer, and so on. It’s especially
+              important for Indian women as they tend to suffer from iron deficiency and anaemia and may require
+              supplementation. If the CBC is okay, it may be repeated once a year.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class="fas fa-pills"></i></div>
+            <h4><a href="">Blood Sugar Test</a></h4>
+            <strong style="font-size: 15px; color: brown;">Price: ₹360</strong>
+            <p>Done after a 12-hour fasting period, this helps detect diabetes. In cases of pre-diabetes and diabetes,
+              an additional test, HbA1C that indicates the average blood sugar levels over the previous 3 months is
+              done. An annual testing is recommended if the reading is normal.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="fas fa-hospital-user"></i></div>
+            <h4><a href="">Lipid Profile</a></h4>
+            <strong style="font-size: 15px; color: brown;">Price: ₹990</strong>
+            <p>It is an accurate indicator of your heart health. This blood test measures the total cholesterol,
+              triglycerides, and HDL and LDL levels. Testing once in 2 years is recommended for people with normal
+              readings.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="fas fa-dna"></i></div>
+            <h4><a href="">Liver Function Test</a></h4>
+            <strong style="font-size: 15px; color: brown;">Price: ₹1070</strong>
+            <p>This is done annually to screen for liver conditions, such as alcohol-induced liver damage, fatty
+              liver, Hepatitis C and B.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="fas fa-wheelchair"></i></div>
+            <h4><a href="">Urine Analysis</a></h4>
+            <strong style="font-size: 15px; color: brown;">Price: ₹780</strong>
+            <p>It checks for presence of proteins, sugar and blood (especially in smokers who are at high risk for
+              bladder cancer) in the urine sample, which could indicate kidney disease, among other conditions. If the
+              report is normal, get a test done yearly.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="fas fa-notes-medical"></i></div>
+            <h4><a href="">Thyroid Function Test</a></h4>
+            <strong style="font-size: 15px; color: brown;">Price: ₹570</strong>
+            <p>These blood tests are important in detecting underactive (hypothyroidism) or overactive thyroid
+              (hyperthyroidism). In case of normal findings, once-a-year testing is recommended.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Test Section -->
+
+  <!-- ======= Appointment Section ======= -->
+  <section id="appointment" class="appointment section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Make an Appointment</h2>
+        <p>Book an appointment and get a slot at your own convenience. Fill in your details and click on the 'Make an
+          Appointment' button. <br>Confirmation of your slot will soon be informed to you via email. <br>Note: You
+          cannot cancel an instant appointment or any booked appointment before receiving confirmation.</p>
+      </div>
+
+      <form action="forms/appointment.php" method="post" role="form" class="php-email-form" id="f">
+        <div class="row">
+          <div class="col-md-4 form-group">
+            <input type="text" name="name" class="form-control req" id="name" placeholder="Your Name*" data-rule="minlen:4" required>
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control req" name="email" id="email" placeholder="Your Email*" data-rule="email"
+              data-msg="Please enter a valid email" required>
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group mt-3 mt-md-0">
+            <input type="tel" class="form-control req" name="phone" id="phone" placeholder="Your Phone No.*"
+              data-rule="minlen:4" data-msg="Please enter at least 10 chars" required>
+            <div class="validate"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 form-group mt-3">
+            <input type="datetime" name="date" class="form-control req" id="date"
+              placeholder="Appointment Date (DD/MM/YYYY)*" data-rule="minlen:4" required>
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group mt-3">
+            <select name="department" id="department" class="form-select">
+              <option value="">Select Test*</option>
+              <option value="Test 1">blood count</option>
+              <option value="Test 2">blood typing</option>
+              <option value="Test 3">enzyme analysis</option>
+              <option value="Test 4">immunologic blood test</option>
+              <option value="Test 5">serological test</option>
+              <option value="Test 6">bone marrow aspiration</option>
+              <option value="Test 7">amniocentesis</option>
+              <option value="Test 8">gastric fluid analysis</option>
+              <option value="Test 9">pregnancy test</option>
+              <option value="Test 10">syphilis test</option>
+              <option value="Test 11">toxicology test</option>
+              <option value="Test 12">thyroid function test</option>
+              <option value="Test 13">Pap smear</option>
+              <option value="Test 14">urinalysis/uroscopy</option>
+              <option value="Test 15">protein-bound iodine test</option>
+              <option value="Test 16">kidney function test</option>
+              <option value="Test 17">liver function test</option>
+              <option value="Test 18">malabsorption test</option>
+              <option value="Test 19">thoracentesis</option>
+              <option value="Test 20">echocardiography</option>
+            </select>
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group mt-3">
+            <select name="doctor" id="doctor" class="form-select">
+              <option value="">Select Doctor*</option>
+              <option value="Doctor 1">Dr. ABC XYZ</option>
+              <option value="Doctor 1">Dr. DEF UVW</option>
+              <option value="Doctor 1">Dr. GHI RST</option>
+              <option value="Doctor 1">Dr. IJK LMN</option>
+            </select>
+            <div class="validate"></div>
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+          <div class="validate"></div>
+        </div>
+        <div class="text-center"><button type="submit" onclick="myFunction()">Make an Appointment</button>
+
+        </div>
+      </form>
+
+    </div>
+  </section><!-- End Appointment Section -->
+
+  <!-- ======= Departments Section ======= -->
+  <section id="departments" class="departments">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Departments</h2>
+        <h5><b>- What we offer -</h5></b><br>
+        <p>MedilabS offers an exaustive test menu of more than 200 tests. This includes a wide range of services from
+          basic blood counts and cholesterol testing to more complex diagnoses of genetic conditions, cancers, and
+          other rare diseases.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Endocrinology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Haematology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Immunology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Microbiology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Serology</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="tab-content">
+            <div class="tab-pane active show" id="tab-1">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Endocrinology</h3>
+                  <p class="fst-italic">Endocrinologists treat people who suffer from hormonal imbalances, typically
+                    from glands in the endocrine system or certain types of cancers. The overall goal of treatment is
+                    to restore the normal balance of hormones found in a patient's body.</p>
+                  <p>The Endocrinology Laboratory supports Medilabs and is committed to providing the highest level of
+                    diagnostic specimen testing for people with endocrine system disorders. We adhere to international
+                    standards and best practices.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/department-1.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-2">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Haematology</h3>
+                  <p class="fst-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, laborum
+                    amet reiciendis consectetur modi nostrum error dignissimos aut dolore fuga, iste iusto omnis id!
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit alias, modi consequatur
+                    exercitationem sunt amet unde maiores. Blanditiis maiores accusamus sint totam facilis? Voluptas,
+                    eaque? Rem fugit eveniet dolore dolorum suscipit dicta temporibus dolorem.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/department-2.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-3">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Immunology</h3>
+                  <p class="fst-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, laborum
+                    amet reiciendis consectetur modi nostrum error dignissimos aut dolore fuga, iste iusto omnis id!
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit alias, modi consequatur
+                    exercitationem sunt amet unde maiores. Blanditiis maiores accusamus sint totam facilis? Voluptas,
+                    eaque? Rem fugit eveniet dolore dolorum suscipit dicta temporibus dolorem.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/department-3.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-4">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Microbiology</h3>
+                  <p class="fst-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, laborum
+                    amet reiciendis consectetur modi nostrum error dignissimos aut dolore fuga, iste iusto omnis id!
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit alias, modi consequatur
+                    exercitationem sunt amet unde maiores. Blanditiis maiores accusamus sint totam facilis? Voluptas,
+                    eaque? Rem fugit eveniet dolore dolorum suscipit dicta temporibus dolorem.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/department-4.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-5">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Serology</h3>
+                  <p class="fst-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, laborum
+                    amet reiciendis consectetur modi nostrum error dignissimos aut dolore fuga, iste iusto omnis id!
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit alias, modi consequatur
+                    exercitationem sunt amet unde maiores. Blanditiis maiores accusamus sint totam facilis? Voluptas,
+                    eaque? Rem fugit eveniet dolore dolorum suscipit dicta temporibus dolorem.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/department-5.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Departments Section -->
+
+  <!-- ======= Doctors Section ======= -->
+  <section id="doctors" class="doctors">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Physicians</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloremque placeat 
+          aliquid dolore tempore rerum repellat recusandae eveniet tenetur quam, hic fugit, explicabo est fuga? 
+          Explicabo exercitationem recusandae totam excepturi unde quos deleniti numquam quasi voluptatum.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Dr. ABC XYZ</h4>
+              <span>Immunologist</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat molestias numquam est minus
+                perspiciatis!</p>
+              <div class="social">
+                <a href=""><i class="ri-twitter-fill"></i></a>
+                <a href=""><i class="ri-facebook-fill"></i></a>
+                <a href=""><i class="ri-instagram-fill"></i></a>
+                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Dr. DEF UVW</h4>
+              <span>Endocrinologist</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, temporibus molestias. Debitis
+                harum exercitationem ab!</p>
+              <div class="social">
+                <a href=""><i class="ri-twitter-fill"></i></a>
+                <a href=""><i class="ri-facebook-fill"></i></a>
+                <a href=""><i class="ri-instagram-fill"></i></a>
+                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Dr. GHI RST</h4>
+              <span>Microbiologist</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus expedita laboriosam fugiat aliquam
+                voluptates libero.</p>
+              <div class="social">
+                <a href=""><i class="ri-twitter-fill"></i></a>
+                <a href=""><i class="ri-facebook-fill"></i></a>
+                <a href=""><i class="ri-instagram-fill"></i></a>
+                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Dr. IJK LMN</h4>
+              <span>Haematologist</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptates sit consectetur
+                explicabo error dolorem!</p>
+              <div class="social">
+                <a href=""><i class="ri-twitter-fill"></i></a>
+                <a href=""><i class="ri-facebook-fill"></i></a>
+                <a href=""><i class="ri-instagram-fill"></i></a>
+                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Doctors Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact our Medilab to know more. Fill out this form for enquiry or else, contact via email or call us now!</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5">
+
+        <div class="col-lg-4">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>A-18 Park Street, Kolkata, WB 700022</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>contactus@mldis.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+91 94510 65403</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-8 mt-5 mt-lg-0">
+
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="cont">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control req" id="name" placeholder="Your Name*" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control req" name="email" id="email" placeholder="Your Email*" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control req" name="subject" id="subject" placeholder="Subject*" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control req" name="message" rows="5" placeholder="Message*" required></textarea>
+            </div>
+            <div class="text-center"><button type="submit" onclick="myContact()">Send Message</button></div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="container d-md-flex py-4">
+
+          <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+              &copy; Copyright <strong><span>Medilab & DrugStore</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              Designed by <b>Sneha</b>
+            </div>
+          </div>
+          <div class="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <link href="jquery.simple-popup.min.css" rel="stylesheet">
+  <link href="jquery.simple-popup.settings.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="jquery.simple-popup.min.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    const searchBox = document.querySelector(".search-box");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const searchInput = document.querySelector("input");
+    const searchData = document.querySelector(".search-data");
+    searchBtn.onclick = () => {
+      searchBox.classList.add("active");
+      searchBtn.classList.add("active");
+      searchInput.classList.add("active");
+      cancelBtn.classList.add("active");
+      searchInput.focus();
+      if (searchInput.value != "") {
+        var values = searchInput.value;
+        searchData.classList.remove("active");
+        searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
+      } else {
+        searchData.textContent = "";
+      }
+    }
+    cancelBtn.onclick = () => {
+      searchBox.classList.remove("active");
+      searchBtn.classList.remove("active");
+      searchInput.classList.remove("active");
+      cancelBtn.classList.remove("active");
+      searchData.classList.toggle("active");
+      searchInput.value = "";
+    }
+  </script>
+
+<script>
+  var form = document.getElementById('f');
+
+function myFunction() {
+  if (form.checkValidity()) {
+    alert("Your appointment request has been sent. Thank you!");
+  }
+}
+</script>
+
+<script>
+  var form = document.getElementById('cont');
+
+function myContact() {
+  if (form.checkValidity()) {
+    alert("Your message has been sent. Thank you!");
+  }
+}
+</script>
+
+</body>
+
+</html>

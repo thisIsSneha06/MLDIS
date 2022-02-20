@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" href="images/favicon.png"/>
+        <title>MediStore</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css"/>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+    </head>
+    <body>
+        <div class="container">
+        
+            <div class="row" id="search_manu" style="margin-top: 10px">
+                <div class="col-md-6 col-xs-12">
+                    <form  name="quick_find">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" placeholder="Enter search keywords here" class="form-control input-lg" id="inputGroup"/>
+                                <span class="input-group-addon">
+                                    <a href="#" style="color:white">Search</a>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-xs-12">
+
+                    <form  name="manufacturers"> 
+                        <div class="form-group">
+                            <div class="">
+                                <select  style="font-size: 14px; background: #EAEAEA; border: none;" name="manufacturers_id"  size="1" class="input-lg form-control arrow-hide date_class">
+                                    <option value="" selected="selected">Please Select manufacturers</option>
+                                    <option>Cipla</option>
+                                    <option>Dr. Reddy's</option>
+                                    <option>Ayush</option>
+                                    <option>Biocon</option>
+                                    <option>Glenmark</option>
+                                    <option>Cadila Healthcare</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="container cart-block-style">          
+                <div class="breadcrumbs">
+                    <a href="home.html"><i class="fa fa-home"></i></a>
+                    <a href="#">Shopping Cart</a>
+                </div>
+                <form>
+                    <div class="table-responsive margin-top">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td class="text-center"></td>
+                                    <td class="text-left">PRODUCT NAME</td>
+                                    <td class="text-left">QUANTITY</td>
+                                    <td class="text-right">UNIT PRICE</td>
+                                    <td class="text-right">TOTAL</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">                                   
+                                        <a href="single-product.html">
+                                            <img title="ana"  src="images/img1.png" style="width: 100px; height: 80px;">
+                                        </a>
+                                    </td>
+                                    <td class="text-left"><a href="#">MEDICINE XYZ</a>
+                                        <br>
+                                        <small>Manufacturer: CompanyName</small>
+                                        <br>
+                                        <small>Mfd. Dt: 00/00/00</small>
+                                        <br>
+                                        <small>Exp. Dt: 00/00/00</small>
+                                    </td>
+                                    <td class="text-left"><br><div style="max-width: 200px;" class="input-group btn-block">
+                                            <input type="text" class="form-control input-sm" size="1" value="1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-primary" type="submit" data-original-title="Update"><i class="fa fa-refresh"></i></button>
+                                            </span></div></td>
+                                    <td class="text-right"><br>₹576.00</td>
+                                    <td class="text-right"><br>₹576.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+                <h3>What would you like to do next?</h3>
+                <p>Choose if you have a discount code or gift certificate you want to use or would like to checkout now.</p>
+                <div id="accordion" class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" class="accordion-toggle" href="#collapse-coupon" aria-expanded="true">Use Coupon Code <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="collapse-coupon" style="" aria-expanded="true">
+                            <div class="panel-body">
+                                <label for="input-coupon" class="col-sm-2 control-label">Enter your coupon Code here</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="input-coupon" placeholder="Enter your coupon Code here" value="" name="coupon">
+                                    <span class="input-group-btn">
+                                        <input type="button" class="btn btn-primary"  id="button-coupon" value="Apply Coupon">
+                                    </span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapse-voucher">Use Gift Certificate <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="collapse-voucher">
+                            <div class="panel-body">
+                                <label for="input-voucher" class="col-sm-2 control-label">Enter your gift certificate code here</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="input-voucher" placeholder="Enter your gift certificate code here" value="" name="voucher">
+                                    <span class="input-group-btn">
+                                        <input type="submit" class="btn btn-primary"  id="button-voucher" value="Apply Gift Certificate">
+                                    </span> </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-8">
+                        <table class="table table-bordered">
+                            <tbody><tr>
+                            <strong style="font-size: 20px;float: inline-start">Pricing Details:</strong>
+                            <td class="text-right"><strong>Sub-Total:</strong></td>
+                            <td class="text-right">₹576.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">Coupon Code:</td>
+                                <td class="text-right">₹60</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">Gift Voucher:</td>
+                                <td class="text-right">₹0.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">Shipping Tax:</td>
+                                <td class="text-right">₹80.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">VAT (x%):</td>
+                                <td class="text-right">₹18.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>Order Total:</strong></td>
+                                <td class="text-right">₹614.00</td>
+                            </tr>
+                            </tbody></table>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="pull-left"><a class="btn btn-default" href="/medistore/home.html"><i class="fa fa-caret-left"></i>&nbsp;Continue Shopping</a></div>
+                    <div class="pull-right"><a class="btn btn-primary reg_button" href="#">Checkout</a></div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+
+        </div>
+        <a style="display: none" href="javascript:void(0);" class="scrollTop back-to-top" id="back-to-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </body>
+</html> 
